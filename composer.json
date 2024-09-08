@@ -35,7 +35,8 @@
     "require": {
         "php": ">=7.2",
         "guzzlehttp/guzzle": "^7.5",
-        "ext-json": "*"
+        "ext-json": "*",
+        "exbil/mailcow-php-api": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5.0"
@@ -46,5 +47,11 @@
         },
         "files": ["src/MailCowAPI.php", "src/Credentials.php"],
         "classmap": ["src"]
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/exbil/mailcow-php-api"
+        }
+    ]
 }
